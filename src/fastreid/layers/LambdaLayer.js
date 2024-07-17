@@ -1,4 +1,3 @@
-// const tf = require('@tensorflow/tfjs');
 import * as tf from '@tensorflow/tfjs';
 
 class LambdaLayer extends tf.layers.Layer {
@@ -19,5 +18,4 @@ class LambdaLayer extends tf.layers.Layer {
     }
   }
 
-// module.exports = LambdaLayer;
 export default LambdaLayer;

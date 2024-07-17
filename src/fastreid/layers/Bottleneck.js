@@ -1,11 +1,6 @@
-// const tf = require('@tensorflow/tfjs');
-// const Conv2dCustom = require('./Conv2dCustom');
-// const LambdaLayer = require('./LambdaLayer');
-// const fs = require('fs');
 import * as tf from '@tensorflow/tfjs';
 import Conv2dCustom from './Conv2dCustom.js';
 import LambdaLayer from './LambdaLayer.js';
-// import fs from 'fs';
 
 class Bottleneck extends tf.layers.Layer {
     static expansion = 4;
@@ -189,7 +184,6 @@ class Bottleneck extends tf.layers.Layer {
     }
 
     call(x){
-        // let residual = x;
         let residual = Array.isArray(x) ? x[0] : x;
         let out = this.conv1.apply(x);
         
@@ -343,5 +337,4 @@ class Bottleneck extends tf.layers.Layer {
 }
 
 tf.serialization.registerClass(Bottleneck);
-// module.exports = Bottleneck;
 export default Bottleneck;

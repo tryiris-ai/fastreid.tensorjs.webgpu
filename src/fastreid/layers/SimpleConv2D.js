@@ -1,7 +1,5 @@
-// const tf = require('@tensorflow/tfjs');
 import * as tf from '@tensorflow/tfjs';
 
-// Crear una instancia de la capa personalizada
 class SimpleConv2D extends tf.layers.Layer {
     constructor(config) {
       super(config);
@@ -43,7 +41,6 @@ class SimpleConv2D extends tf.layers.Layer {
       };
     }
   
-    // Implementamos getWeights y setWeights para manejar los pesos de la capa interna
     getWeights() {
       return this.conv2d.getWeights();
     }
@@ -53,5 +50,4 @@ class SimpleConv2D extends tf.layers.Layer {
     }
   }
 
-  // module.exports = SimpleConv2D;
   export default SimpleConv2D;

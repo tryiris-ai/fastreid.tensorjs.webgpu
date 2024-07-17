@@ -1,4 +1,3 @@
-// const tf = require('@tensorflow/tfjs');
 import * as tf from '@tensorflow/tfjs';
 
 class Conv2dCustom extends tf.layers.Layer {
@@ -89,5 +88,4 @@ class Conv2dCustom extends tf.layers.Layer {
 }
 
 tf.serialization.registerClass(Conv2dCustom);
-// module.exports = Conv2dCustom;
 export default Conv2dCustom;

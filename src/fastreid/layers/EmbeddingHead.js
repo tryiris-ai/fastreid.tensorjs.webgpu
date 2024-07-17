@@ -1,4 +1,3 @@
-// const tf = require('@tensorflow/tfjs');
 import * as tf from '@tensorflow/tfjs';
 
 class EmbeddingHead extends tf.layers.Layer {
@@ -51,5 +50,4 @@ class EmbeddingHead extends tf.layers.Layer {
   }
 
 tf.serialization.registerClass(EmbeddingHead);
-// module.exports = EmbeddingHead;
 export default EmbeddingHead;

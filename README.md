@@ -8,4 +8,4 @@ This project can be installed and tested through npm and webpack config:
 $ npm install
 $ npm start
 ```
-The main entry points are in ./src/index.html and ./src/index.ts. The repo is ready to load the binary model and test images from an http server. You can run this other server cloning this [model server repo](https://github.com/tryiris-ai/model.tensorjs.server)
+The main entry points are in ./src/index.html and ./src/index.ts. The repo is ready to load the binary model and test images from an http server. You can run this other server cloning the [model server](https://github.com/tryiris-ai/model.tensorjs.server) repo.
